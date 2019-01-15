@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get '/show', to: 'secrets#show'
   # get '/login', to: 'secrets#new'
   # post '/login', to: 'secrets#create'
-  # get '/', to: 'sessions#index'
+  get '/', to: 'sessions#index'
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   # resources :secrets do
