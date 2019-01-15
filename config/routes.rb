@@ -9,8 +9,8 @@ Rails.application.routes.draw do
   #   get 'products/:id' => 'catalog#view'
 
   get '/', to: 'secrets#index'
-  get '/login', to: 'secrets#login'
-  post '/login', to: 'secrets#post_login'
+  get '/login', to: 'secrets#new'
+  post '/login', to: 'secrets#create'
   # resources :secrets do
   #   get 'login', on: :member
   # end
