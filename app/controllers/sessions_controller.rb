@@ -14,6 +14,7 @@ class SessionsController < ApplicationController
 
   def destroy
     session.delete :name if current_user
+    redirect_to controller: 'sessions', action: new
   end
 
   private
