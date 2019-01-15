@@ -7,5 +7,6 @@ class SecretsController < ApplicationController
 
   def create
     redirect_to new unless params[:name].nil? || params[:name].empty?
+    session[:name] = params[:name]
   end
 end
