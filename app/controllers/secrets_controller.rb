@@ -10,4 +10,10 @@ class SecretsController < ApplicationController
     session[:name] = params[:name]
     redirect_to index
   end
+
+  private
+
+  def require_login
+    return head(:forbidden) unless session.include? :name
+  end
 end
