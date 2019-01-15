@@ -10,7 +10,9 @@ Rails.application.routes.draw do
 
   # get '/', to: 'secrets#index'
   # get '/login', to: 'secrets#login'
-  resources :secrets, only: [:index, :login]
+  resources :secrets do
+    get 'login', on: :member
+  end
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
