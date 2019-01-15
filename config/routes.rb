@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get '/', to: 'sessions#index'
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
+  post '/logout', to: 'sessions#destroy'
   # resources :secrets do
   #   get 'login', on: :member
   # end
