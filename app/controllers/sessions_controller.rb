@@ -12,6 +12,9 @@ class SessionsController < ApplicationController
     # binding.pry
   end
 
+  def destroy
+    session.delete :name if current_user
+
   private
 
   def require_login
