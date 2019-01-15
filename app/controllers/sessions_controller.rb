@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-    return redirect_to(action: new) if params[:name].nil? || params[:name].empty?
+    return redirect_t new if params[:name].nil? || params[:name].empty?
     # session[:name] = params[:name]
     # redirect_to action: index
   end
