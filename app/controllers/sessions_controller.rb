@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
   def create
     # redirect_to '/login' if params[:name].nil? || params[:name].empty?
     session[:name] = params[:name]
-    redirect_to index
+    # redirect_to index
   end
 
   private
