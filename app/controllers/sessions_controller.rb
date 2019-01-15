@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   def index
-    redirect_to "/login" if current_user
+    redirect_to "/login" unless current_user
   end
 
   def new
