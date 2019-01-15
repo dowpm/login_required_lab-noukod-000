@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   get '/', to: 'secrets#index'
   get '/login', to: 'secrets#new'
   post '/login', to: 'secrets#create'
+  get '/', to: 'sessions#index'
+  get '/login', to: 'sessions#new'
+  post '/login', to: 'sessions#create'
   # resources :secrets do
   #   get 'login', on: :member
   # end
