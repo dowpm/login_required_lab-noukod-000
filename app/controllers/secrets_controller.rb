@@ -2,9 +2,9 @@ class SecretsController < ApplicationController
   def index
   end
 
-  def login
+  def new
   end
 
-  def post_login
+  def create
   end
 end
