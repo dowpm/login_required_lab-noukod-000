@@ -4,5 +4,7 @@ class SecretsController < ApplicationController
 
   def login
   end
-end
 
+  def post_login
+  end
+end
